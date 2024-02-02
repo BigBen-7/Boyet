@@ -1,0 +1,61 @@
+.image-container img {
+  /* width: 60%; */
+  height: auto;
+}
+/* Adjusting the position of the second image  */
+.images-container img:last-child {
+  top: 0;
+  z-index: 20;
+}
+.group-image {
+  width: 40%;
+  position: absolute;
+  top: 9rem;
+  right: 14rem;
+  z-index: 20;
+  /* opacity: 0.85; */
+}
+.hero-head {
+  font-size: 45px;
+  font-weight: 300;
+  line-height: 71px;
+  text-align: left;
+}
+
+.gradient-text {
+  font-size: 53px;
+  font-weight: 800;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(180deg, #de4396 0%, rgba(13, 28, 159, 0) 100%),
+    linear-gradient(225deg, #f7666f 0%, #406aff 100%);
+  line-height: 71px;
+}
+.black-bold-text {
+  font-weight: 800;
+  text-align: left;
+  font-size: 53px;
+  line-height: 71px;
+}
+.hero-detail {
+  width: 531px;
+  height: 58px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.hero-btn {
+  margin-top: 30px;
+  width: 207px;
+  height: 52px;
+  background-color: #000080;
+  color: #fff;
+  padding: 19px, 30px, 19px, 30px;
+  border-radius: 5px;
+  gap: 10px;
+  box-shadow: 0px 4px 49px 0px #00000026;
+}
