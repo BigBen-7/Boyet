@@ -11,7 +11,7 @@
         <router-link to="/about" class="hover:underline">Case Studies</router-link>
         <router-link to="/services" class="hover:underline">Hire Us</router-link>
         <!-- contact-us-button  -->
-        <button class="bg-blue-950 text-white font-bold px-4 py-4 rounded-md hover: bg-100">
+        <button class="bg-blue-950 text-white font-bold px-4 py- rounded-md hover: bg-100">
           Contact Us
         </button>
       </nav>
