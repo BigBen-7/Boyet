@@ -55,28 +55,3 @@
 }
 
 /* CUSTOMERS STYLING  */
-.customers-heading h2 {
-  /* width: 350px; */
-  height: 108px;
-  font-size: 35px;
-  font-weight: 400;
-  line-height: 55px;
-  letter-spacing: 0em;
-  text-align: center;
-}
-.love {
-  font-weight: 700;
-  line-height: 55px;
-  letter-spacing: 0em;
-  text-align: center;
-}
-.customers-content {
-  /* width: 535px; */
-  height: 181px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 36px;
-  letter-spacing: 0em;
-  text-align: center;
-  color: #718096;
-}

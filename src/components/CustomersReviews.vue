@@ -18,14 +18,28 @@
     </div>
     <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <!-- Customer Cards -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+    <div class="flex justify-center gap-8">
       <!-- Loop through customers and display their information -->
-      <div v-for="(customer, index) in customers" :key="index" class="text-center">
+      <div v-for="(customer, index) in customers" :key="index" class="text-center customers">
         <!-- Customer Image -->
-        <img :src="customer.image" alt="Customer" class="rounded-full w-32 h-32 mx-auto mb-2" />
+        <img
+          :src="customer.image"
+          :alt="customer.name"
+          class="rounded-full w-32 h-32 mx-auto mb-2"
+        />
+        <!-- Rating  -->
+        <img :src="customer.rating" :alt="customer.name" class="w-30 mb-2" />
 
-        <!-- Five Star Rating -->
-        <div class="flex justify-center mb-2"></div>
+        <!-- Conditional rendering for middle customer -->
+        <div v-if="index === Math.floor(customers.length / 2)">
+          <h3 class="middle-customer">{{ customer.name }}</h3>
+          <p class="middle-role">{{ customer.role }}</p>
+        </div>
+        <!-- Conditional rendering for other customers -->
+        <div v-else>
+          <h3 class="other-customer">{{ customer.name }}</h3>
+          <p class="role">{{ customer.role }}</p>
+        </div>
       </div>
     </div>
 
@@ -41,29 +55,34 @@ export default {
     return {
       customers: [
         {
-          name: 'John Doe',
-          image: '/path/to/your/image1.jpg',
-          role: 'Web Developer'
+          name: 'Michael Musa',
+          image: '/src/assets/customers-img/michael.png',
+          role: 'Web Developer',
+          rating: '/src/assets/customers-img/stars.png'
         },
         {
-          name: 'Jane Smith',
-          image: '/path/to/your/image2.jpg',
-          role: 'UI/UX Designer'
+          name: 'John Smith',
+          image: '/src/assets/customers-img/john.png',
+          role: 'UI/UX Designer',
+          rating: '/src/assets/customers-img/stars.png'
         },
         {
-          name: 'Alex Johnson',
-          image: '/path/to/your/image3.jpg',
-          role: 'Project Manager'
+          name: 'Prosper Nwafor',
+          image: '/src/assets/customers-img/prosper.png',
+          role: 'Software Engineer',
+          rating: '/src/assets/customers-img/stars.png'
         },
         {
           name: 'Emily Brown',
-          image: '/path/to/your/image4.jpg',
-          role: 'Software Engineer'
+          image: '/src/assets/customers-img/grace.png',
+          role: 'Software Engineer',
+          rating: '/src/assets/customers-img/stars.png'
         },
         {
           name: 'Michael Davis',
-          image: '/path/to/your/image5.jpg',
-          role: 'QA Tester'
+          image: '/src/assets/customers-img/tope.png',
+          role: 'QA Tester',
+          rating: '/src/assets/customers-img/stars.png'
         }
       ]
     }
@@ -75,5 +94,5 @@ export default {
 </script>
 
 <style scoped>
-@import '../styles/leading.css';
+@import '../styles/customer.css';
 </style>
