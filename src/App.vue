@@ -6,6 +6,7 @@
     <LeadingSection />
     <MeetPeople />
     <CustomersReviews />
+    <CaseStudySection />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import ServicesSection from './components/ServicesSection.vue'
 import LeadingSection from './components/LeadingSection.vue'
 import MeetPeople from './components/MeetPeople.vue'
 import CustomersReviews from './components/CustomersReviews.vue'
+import CaseStudySection from './components/CaseStudySection.vue'
 
 export default {
   components: {
@@ -24,7 +26,8 @@ export default {
     ServicesSection,
     LeadingSection,
     MeetPeople,
-    CustomersReviews
+    CustomersReviews,
+    CaseStudySection
   }
 }
 </script>

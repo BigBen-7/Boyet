@@ -59,3 +59,33 @@
   text-align: center;
   color: #a0aec0;
 }
+.deco-arrow {
+  margin: auto;
+  width: 70%;
+  height: 209.02px;
+}
+.left-arrow {
+  width: 153.84px;
+}
+.right-arrow {
+  width: 193.8px;
+  position: relative;
+  top: 5rem;
+  right: 2rem;
+}
+.case-study-head {
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #000080;
+  margin-bottom: 5rem;
+}
+.light {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: center;
+}

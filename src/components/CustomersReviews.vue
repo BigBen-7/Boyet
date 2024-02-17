@@ -42,6 +42,16 @@
         </div>
       </div>
     </div>
+    <div class="deco-arrow mx-5">
+      <div class="deco-container flex items-center justify-between">
+        <img src="/src/assets/logos/Deco-img-arrow.png" alt="arrow" class="left-arrow" />
+        <img src="/src/assets/logos/Deco-img-arrow (1).png" alt="arrow" class="right-arrow" />
+      </div>
+      <h2 class="text-3xl mb-8 text-center case-study-head">
+        Our Recent <br />
+        <span class="light">Case Studies</span>
+      </h2>
+    </div>
 
     <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
   </section>
